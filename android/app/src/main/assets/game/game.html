@@ -1284,6 +1284,7 @@ function initFight(){
   Game.p2 = new Fighter(2, p2char, 900, -1, isP2CPU, true);
   Game.p2.aiDifficulty = diff;
   Game.p2.isMiguelBoss = Game.mode==='arcade' && p2char==='miguel';
+  ["p1HpBar","p2HpBar","timer"].forEach(id=>{const e=document.getElementById(id);if(e)e.style.visibility=Game.p2.isMiguelBoss?"hidden":"visible";});
   Game.bossCinematic = null;
   Game.bossIntro = Game.p2.isMiguelBoss ? { elapsed: 0 } : null;
   Game.p1.opponent = Game.p2;
