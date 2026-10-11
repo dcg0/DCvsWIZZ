@@ -67,5 +67,3 @@ Consulta la [política de seguridad](SECURITY.md) para reportar vulnerabilidades
 - `.github/workflows/android.yml`: compilación automática de la APK.
 - `.github/dependabot.yml`: actualizaciones automáticas de Gradle y GitHub Actions.
 - `SECURITY.md`: proceso de reporte y prácticas de seguridad.
-
-50d225a46045e0dcf5d06ffa7e1be81ac8966c07
