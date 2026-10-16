@@ -9,7 +9,7 @@
 
 ![Portada DC vs WiZZ](public/assets/portada.jpg)
 
-**DC vs WiZZ** es un arcade fighter remasterizado con página promocional, juego web completo, cinemática especial de Miguel, entrada de Wero y Yiyo, y una aplicación Android con icono propio.
+**DC vs WiZZ** es un arcade fighter remasterizado
 
 ## Enlaces principales
 
@@ -18,17 +18,11 @@
 - **[Ver la release v1.0.0](https://github.com/DebianS4/DCvsWIZZ/releases/tag/v1.0.0)**
 - **[Ver el repositorio](https://github.com/DebianS4/DCvsWIZZ)**
 
-La APK está firmada para instalación de prueba en Android. Puede ser necesario habilitar la instalación desde fuentes externas en el dispositivo.
+La APK está firmada para instalación de prueba en Android
 
 ## Contenido
 
-- Landing arcade responsiva con portada e identidad visual DC vs WiZZ.
-- Juego integrado en gabinete arcade.
-- Selección de luchador con los artes `p1` y `p2`.
-- Combates normales con los lados del jugador e IA fijados.
-- Jefe Miguel con escenario nocturno, tres rayos, entrada lenta de Yiyo y diálogo: “¡VETE A LA ÑONGA, MIGUEL!”.
-- Sprites de K.O. `DCmuerto` y `wizmuerto`.
-- APK Android con icono basado en `logo.png` y recursos web incluidos.
+- Landing arcade
 
 ## Desarrollo web
 
@@ -37,7 +31,7 @@ npm install
 npm run dev
 ```
 
-La página se sirve en `http://localhost:3000`.
+La página se sirve en `http://localhost:
 
 ## Compilar la APK
 
@@ -58,7 +52,7 @@ El workflow de GitHub Actions compila la APK en cada push a `main` y permite des
 
 ## Seguridad
 
-Consulta la [política de seguridad](SECURITY.md) para reportar vulnerabilidades. El proyecto mantiene permisos mínimos en Android, no incluye claves secretas en el código y configura el workflow con `contents: read`. Las dependencias y acciones de GitHub se revisan mediante Dependabot.
+Consulta la [política de seguridad](SECURITY.md) dependencias y acciones de GitHub se revisan mediante Dependabot.
 
 ## Estructura
 
