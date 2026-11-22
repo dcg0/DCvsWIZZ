@@ -9,7 +9,7 @@
 
 ## Reportar una vulnerabilidad
 
-No publiques vulnerabilidades, claves, tokens ni datos personales en issues públicos. Abre un **Security Advisory privado** desde la pestaña **Security** del repositorio [DCvsWIZZ](https://github.com/DebianS4/DCvsWIZZ/security/advisories), incluyendo:
+No publiques vulnerabilidades, claves, tokens ni datos personales en issues públicos. Abre un **Security Advisory privado** desde la pestaña **Security** del repositorio [DCvsWIZZ](https://github.com/dcg0/DCvsWIZZ/security/advisories), incluyendo:
 
 - descripción y pasos para reproducir;
 - impacto estimado;
