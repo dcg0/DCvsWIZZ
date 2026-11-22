@@ -9,7 +9,7 @@
 
 La auditoría encontró y corrigió una causa determinista del fallo de compilación Android: el proyecto usa Android Gradle Plugin `9.4.1`, que requiere Gradle `9.6.0` o posterior, mientras el wrapper apuntaba a `8.7`. También se corrigieron enlaces de documentación que apuntaban al propietario equivocado (`DebianS4`), una URL local incompleta, la insignia de licencia y la referencia a una release/APK que no existía. Se añadió `pnpm-lock.yaml` y se eliminó la opción Gradle AndroidX obsoleta.
 
-El repositorio queda **REQUIERE REVISIÓN**, no aprobado todavía: la protección de `main` no está habilitada, las APIs de Code Scanning, Secret Scanning y Dependabot devuelven `403 Resource not accessible by integration`, no hay licencia declarada ni releases publicadas, y la nueva ejecución de `Build APK` debe terminar en verde después del push.
+El repositorio queda **REQUIERE REVISIÓN**, no aprobado todavía: la protección de `main` no está habilitada y las APIs de Code Scanning, Secret Scanning y Dependabot devuelven `403 Resource not accessible by integration`. La ejecución corregida de `Build APK` terminó en verde y su APK se publicó después como Release `v1.0.0`.
 
 ## Correcciones aplicadas
 
@@ -57,7 +57,7 @@ La compilación Android avanzó hasta `processDebugResources` con JDK 17 y Andro
 
 ### Releases y distribución
 
-En la fecha de auditoría `gh release list -R dcg0/DCvsWIZZ` no encontró releases y `v1.0.0` no existe. El README ahora enlaza a la página general de releases y al artefacto de Actions no se le presenta como una descarga permanente. Si se desea una APK pública, debe generarse después de que CI quede verde y publicarse mediante una Release con checksum.
+En la primera comprobación `gh release list -R dcg0/DCvsWIZZ` no encontró releases y `v1.0.0` no existía. Tras el cierre de CI se creó la Release `v1.0.0` con la APK generada por el run `45011575297` y su checksum. APK: `https://github.com/dcg0/DCvsWIZZ/releases/download/v1.0.0/DCvsWIZZ.apk`. SHA-256: `890d4acb2c60732f09c64ac75deed08256763d329e402f522534b18c33def552`.
 
 ## Puntuación
 
@@ -73,4 +73,4 @@ En la fecha de auditoría `gh release list -R dcg0/DCvsWIZZ` no encontró releas
 
 ## Veredicto
 
-**REQUIERE REVISIÓN.** El problema reproducible del wrapper quedó corregido y las validaciones locales disponibles pasan, pero la aprobación final depende de confirmar el nuevo `Build APK` en GitHub Actions y de resolver, con permisos de propietario, la protección de `main` y la visibilidad de las alertas de seguridad. No se declara una APK publicada porque no existe una Release en este repositorio.
+**REQUIERE REVISIÓN.** El problema reproducible del wrapper quedó corregido, las validaciones locales disponibles pasan, `Build APK` y Pages quedaron verdes, y la APK está publicada con checksum. La aprobación total sigue bloqueada por la protección ausente de `main` y por la imposibilidad de consultar las alertas privadas con el token actual; no deben interpretarse como alertas limpias.
